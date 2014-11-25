@@ -5,4 +5,5 @@ class Pin < ActiveRecord::Base
 		:styles => { :medium => "300x300>", :thumb => "100x100>" }, 
 		:default_url => "/images/:style/missing.png",
 		:bucket  => ENV['dorinbeach']
+	validates :description, presence: true
 end
